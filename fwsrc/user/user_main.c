@@ -57,6 +57,7 @@ void ICACHE_FLASH_ATTR charrx( uint8_t c )
 
 void user_init(void)
 {
+	system_update_cpu_freq(160);
 	uart_init(BIT_RATE_115200, BIT_RATE_115200);
 
 	uart0_sendStr("\r\nesp82XX Web-GUI\r\n" VERSSTR "\b");

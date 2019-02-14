@@ -29,7 +29,7 @@ SLOWTICK_MS ?= 50
 # Derived Options
 ###############################################################################
 
-OPTS += -DWEB_PORT=$(WEB_PORT) -DCOM_PORT=$(COM_PORT) -DBACKEND_PORT=$(BACKEND_PORT) $(EXTRAOPTS) -DSLOWTICK_MS=$(SLOWTICK_MS)
+OPTS += -DWEB_PORT=$(WEB_PORT) -DCOM_PORT=$(COM_PORT) -DBACKEND_PORT=$(BACKEND_PORT) -DBROADCAST_PORT=$(BROADCAST_PORT) $(EXTRAOPTS) -DSLOWTICK_MS=$(SLOWTICK_MS)
 PAGE_SCRIPTS?=$(wildcard web/page/*.js)
 
 # Getting xtensa compiler paths from shell variables
